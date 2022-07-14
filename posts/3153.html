@@ -20,7 +20,7 @@
   <meta name="author" content="Sean_zhou">
   <meta name="keywords" content="计算机,前端,js,css,hyml">
   
-  <title>LaTeX数学公式 - Sean&#39;s blog</title>
+  <title>Don&#39;t be evil - Sean&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -165,7 +165,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="LaTeX数学公式">
+            <span class="h2" id="subtitle" title="Don't be evil">
               
             </span>
 
@@ -180,8 +180,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-05-02 23:28" pubdate>
-        2021年5月2日 晚上
+      <time datetime="2021-05-07 19:24" pubdate>
+        2021年5月7日 晚上
       </time>
     </span>
   
@@ -192,7 +192,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      485 字
+      506 字
     </span>
   
 
@@ -202,7 +202,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6
+      5
        分钟
     </span>
   
@@ -244,23 +244,34 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">LaTeX数学公式</h1>
+            <h1 style="display: none">Don&#39;t be evil</h1>
             
             <div class="markdown-body">
-              <h1 id="LaTeX数学公式"><a href="#LaTeX数学公式" class="headerlink" title="LaTeX数学公式"></a>LaTeX数学公式</h1><h2 id="LATeX基本练习"><a href="#LATeX基本练习" class="headerlink" title="LATeX基本练习"></a>LATeX基本练习</h2><h3 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h3><p>公式一律使用另取一行，并且上下都空一行</p>
-<p>行间插入 $x = a + b$<br>区间插入 $$x = a + b$$</p>
-<h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><p>可以看到 x 元素的上标通过 ^ 符号后接的内容体现，下表通过 _ 符号后接的内容体现，多于一位是要加 {} 包裹的。 笔者习惯先下标后上标的写法，和我的书写习惯一致：x_{balabala}^{bala}，不管你使用哪一种风格，最好自己注意统一，不要混用.</p>
-<p>$$<br>x_{1}^{2}<br>$$</p>
-<p>$$<br>x_{22}^{(n)}<br>$$</p>
-<h3 id="根式"><a href="#根式" class="headerlink" title="根式"></a>根式</h3><p>读到这里你已经了解了函数的概念，那么这历久很简单了，语法就是 \sqrt[]{} 。[] 中代表是几次根式，{} 代表根号下的表达式<br>$$<br>\sqrt[2]{3}<br>$$</p>
-<h3 id="求和积分"><a href="#求和积分" class="headerlink" title="求和积分"></a>求和积分</h3><p>这里很容易看出求和函数表达式 \sum_{起点}^{终点}表达式，积分函数表达式 \int_下限^上限dx<br>$$<br>\sum_{0}^{1}sinx<br>$$</p>
-<p>$$<br>\int_0^1sinxdx<br>$$</p>
-<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p>紧贴 a\!b<br>$$<br>a!b<br>$$<br>没有空格ab<br>$$<br>ab<br>$$<br>小空格 a,b<br>$$<br>a,b<br>$$<br>中等空格a\ b<br>$$<br>a\ b<br>$$<br>quad空格 a\quad b<br>$$<br>a\quad b<br>$$<br>两个quad空格 a\qquad b<br>$$<br>a\qquad b<br>$$<br>这个直接看上面的文字，介绍很清楚，<strong>主要指微调距离</strong>，使得公式更加漂亮。请比较下面的积分公式<br>$$<br>\int_a^bf(x)dx<br>$$</p>
-<p>$$<br>\ \int_a^bf(x)dx<br>$$</p>
-<h3 id="公式界定符"><a href="#公式界定符" class="headerlink" title="公式界定符"></a>公式界定符</h3><p>通过 \left 和 \right 后面跟界定符来对同时进行界定<br>$$<br>\left(\sum_{k=\frac{1}{2}}^{N^2}\frac{1}{k}\right)<br>$$</p>
-<p>$$<br>\left|\sum_{k=\frac{1}{2}}^{N^2}\frac{1}{k}\right|<br>$$</p>
-<h3 id="多行"><a href="#多行" class="headerlink" title="多行"></a>多行</h3><p>\\\\用来换行，&amp;=用来对齐等号, \begin{align}``\end{align}用来写多行<br>$$<br>x,=,a+,b\\<br>y,=a_{1},+a_{2},+b<br>$$</p>
-<h3 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h3><p>通常使用 <code>\frac &#123;分子&#125; &#123;分母&#125;</code> 来生成一个分数，分数可多层嵌套。如果分式较为复杂，亦可使用 <code>分子 \over 分母</code> 此时分数仅有一层。<br>$$<br>\frac{a-1}{b-1} \quad or \quad {a+1 \over b+1}<br>$$</p>
+              <h1 id="不作恶"><a href="#不作恶" class="headerlink" title="不作恶"></a>不作恶</h1><p>​        对于商业公司来说，只要法律不禁止都是可以做的，绝大多数公司都是这样的企业文化，谷歌公司从2000年初创时就把<strong>不作恶</strong>（<strong>Don’t be evil</strong>）当作了公司文化，这也是谷歌公司在海内外圈粉的一个重要因素，也深深地影响了谷歌公司的员工，这句话甚至成为谷歌总部班车上Wi-Fi的密码。不过在2015年谷歌公司重组时，母公司Alphabet对这个座右铭做了调整，“不作恶”准则被“<strong>做正确的事</strong>”（<strong>do the right thing</strong>）取代。让我想起来三体里罗辑和史强的一段对话，对宇宙社会学进行了一番讨论，讲到了宇宙的公理和善恶。</p>
+<p>宇宙文明的两条<strong>公理</strong>：</p>
+<ul>
+<li><p>生存是文明的第一需求</p>
+</li>
+<li><p>文明不断增长和扩张，但宇宙中的物质总量保持不变</p>
+</li>
+</ul>
+<p>宇宙的两条<strong>准则</strong>：</p>
+<ul>
+<li>猜疑链（谁也不知道谁会先攻击谁）</li>
+<li>技术爆炸</li>
+</ul>
+<p> 文明之间的善意和恶意。善和恶在科学里是不严谨的，所以需要对它们的含义加以限制：善意就是指不主动攻击和消灭其他文明，恶意则相反。类比于科技公司的谷歌，是否也存在着相似的含义。</p>
+<p>前几天还看到一个up主用代码可视化黑暗森林法则，贴一下链接：</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV11h411m7Fp?p=1&share_medium=iphone&share_plat=ios&share_source=QQ&share_tag=s_i&timestamp=1620233847&unique_k=HoaMxA">黑暗森林可视化，真的只有一个选择吗？【波西】_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a></p>
+<p>书中对黑暗森林有这样一段描述：</p>
+<blockquote>
+<p>黑暗森林理论对人类文明的影响是极其深刻的：那个篝火余烬旁的孩子，由外向乐观变得孤僻自闭了。</p>
+</blockquote>
+<p>代码链接：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/brackrat/darkforestsimulate">BrackRat/darkforestsimulate: 三体-黑暗森林模拟程序 (github.com)</a></p>
+<p>还有个谷歌砍掉的项目的网站（有兴趣可以去了解一下）：</p>
+<p><a target="_blank" rel="noopener" href="https://killedbygoogle.com/">Google Graveyard - Killed by Google</a></p>
+<p><img src="https://i.loli.net/2021/05/07/bwmc3ASZsfJQrM8.png" srcset="/img/loading.gif" lazyload alt="image-20210507194217756"></p>
 
             </div>
             <hr>
@@ -271,7 +282,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>
+                      <a class="hover-with-bg" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
                     
                   </div>
                 
@@ -288,9 +299,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog/37120/">
+                      <a href="/posts/49599.html">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">渐进式 Web 应用（PWA）</span>
+                        <span class="hidden-mobile">python3.7.10-dlib</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -298,8 +309,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog/11913/">
-                        <span class="hidden-mobile">Numpy基本库</span>
+                      <a href="/posts/40999.html">
+                        <span class="hidden-mobile">Powershell&&cmd</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -471,45 +482,6 @@
 
 
 
-
-  
-
-  
-    <!-- MathJax -->
-    <script>
-      MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        },
-        options: {
-          renderActions: {
-            findScript: [10, doc => {
-              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-                const display = !!node.type.match(/; *mode=display/);
-                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-                const text = document.createTextNode('');
-                node.parentNode.replaceChild(text, node);
-                math.start = { node: text, delim: '', n: 0 };
-                math.end = { node: text, delim: '', n: 0 };
-                doc.math.push(math);
-              });
-            }, '', false],
-            insertedScript: [200, () => {
-              document.querySelectorAll('mjx-container').forEach(node => {
-                let target = node.parentNode;
-                if (target.nodeName.toLowerCase() === 'li') {
-                  target.parentNode.classList.add('has-jax');
-                }
-              });
-            }, '', false]
-          }
-        }
-      };
-    </script>
-
-    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
-
-  
 
 
 

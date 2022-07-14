@@ -20,7 +20,7 @@
   <meta name="author" content="Sean_zhou">
   <meta name="keywords" content="计算机,前端,js,css,hyml">
   
-  <title>一次难忘的重装系统经历 - Sean&#39;s blog</title>
+  <title>LaTeX数学公式 - Sean&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -165,7 +165,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="一次难忘的重装系统经历">
+            <span class="h2" id="subtitle" title="LaTeX数学公式">
               
             </span>
 
@@ -180,8 +180,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-07-11 20:33" pubdate>
-        2022年7月11日 晚上
+      <time datetime="2021-05-02 23:28" pubdate>
+        2021年5月2日 晚上
       </time>
     </span>
   
@@ -192,7 +192,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      0 字
+      485 字
     </span>
   
 
@@ -202,7 +202,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      6
        分钟
     </span>
   
@@ -244,16 +244,36 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">一次难忘的重装系统经历</h1>
+            <h1 style="display: none">LaTeX数学公式</h1>
             
             <div class="markdown-body">
-              <p><img src="https://s2.loli.net/2022/07/11/HRl1AG6Wwj3tsz4.png" srcset="/img/loading.gif" lazyload alt="760A3485-8A9C-4B2F-BF97-D74A28F7794E"></p>
+              <h1 id="LaTeX数学公式"><a href="#LaTeX数学公式" class="headerlink" title="LaTeX数学公式"></a>LaTeX数学公式</h1><h2 id="LATeX基本练习"><a href="#LATeX基本练习" class="headerlink" title="LATeX基本练习"></a>LATeX基本练习</h2><h3 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h3><p>公式一律使用另取一行，并且上下都空一行</p>
+<p>行间插入 $x = a + b$<br>区间插入 $$x = a + b$$</p>
+<h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><p>可以看到 x 元素的上标通过 ^ 符号后接的内容体现，下表通过 _ 符号后接的内容体现，多于一位是要加 {} 包裹的。 笔者习惯先下标后上标的写法，和我的书写习惯一致：x_{balabala}^{bala}，不管你使用哪一种风格，最好自己注意统一，不要混用.</p>
+<p>$$<br>x_{1}^{2}<br>$$</p>
+<p>$$<br>x_{22}^{(n)}<br>$$</p>
+<h3 id="根式"><a href="#根式" class="headerlink" title="根式"></a>根式</h3><p>读到这里你已经了解了函数的概念，那么这历久很简单了，语法就是 \sqrt[]{} 。[] 中代表是几次根式，{} 代表根号下的表达式<br>$$<br>\sqrt[2]{3}<br>$$</p>
+<h3 id="求和积分"><a href="#求和积分" class="headerlink" title="求和积分"></a>求和积分</h3><p>这里很容易看出求和函数表达式 \sum_{起点}^{终点}表达式，积分函数表达式 \int_下限^上限dx<br>$$<br>\sum_{0}^{1}sinx<br>$$</p>
+<p>$$<br>\int_0^1sinxdx<br>$$</p>
+<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p>紧贴 a\!b<br>$$<br>a!b<br>$$<br>没有空格ab<br>$$<br>ab<br>$$<br>小空格 a,b<br>$$<br>a,b<br>$$<br>中等空格a\ b<br>$$<br>a\ b<br>$$<br>quad空格 a\quad b<br>$$<br>a\quad b<br>$$<br>两个quad空格 a\qquad b<br>$$<br>a\qquad b<br>$$<br>这个直接看上面的文字，介绍很清楚，<strong>主要指微调距离</strong>，使得公式更加漂亮。请比较下面的积分公式<br>$$<br>\int_a^bf(x)dx<br>$$</p>
+<p>$$<br>\ \int_a^bf(x)dx<br>$$</p>
+<h3 id="公式界定符"><a href="#公式界定符" class="headerlink" title="公式界定符"></a>公式界定符</h3><p>通过 \left 和 \right 后面跟界定符来对同时进行界定<br>$$<br>\left(\sum_{k=\frac{1}{2}}^{N^2}\frac{1}{k}\right)<br>$$</p>
+<p>$$<br>\left|\sum_{k=\frac{1}{2}}^{N^2}\frac{1}{k}\right|<br>$$</p>
+<h3 id="多行"><a href="#多行" class="headerlink" title="多行"></a>多行</h3><p>\\\\用来换行，&amp;=用来对齐等号, \begin{align}``\end{align}用来写多行<br>$$<br>x,=,a+,b\\<br>y,=a_{1},+a_{2},+b<br>$$</p>
+<h3 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h3><p>通常使用 <code>\frac &#123;分子&#125; &#123;分母&#125;</code> 来生成一个分数，分数可多层嵌套。如果分式较为复杂，亦可使用 <code>分子 \over 分母</code> 此时分数仅有一层。<br>$$<br>\frac{a-1}{b-1} \quad or \quad {a+1 \over b+1}<br>$$</p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>
+                    
+                  </div>
                 
               </div>
               
@@ -268,12 +288,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/posts/37120.html">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">渐进式 Web 应用（PWA）</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog/10811/">
-                        <span class="hidden-mobile">git入门</span>
+                      <a href="/posts/11913.html">
+                        <span class="hidden-mobile">Numpy基本库</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -445,6 +471,45 @@
 
 
 
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
+
+  
 
 
 
