@@ -20,7 +20,7 @@
   <meta name="author" content="Sean_zhou">
   <meta name="keywords" content="计算机,前端,js,css,hyml">
   
-  <title>Don&#39;t be evil - Sean&#39;s blog</title>
+  <title>Docker学习笔记 - Sean&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -165,7 +165,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Don't be evil">
+            <span class="h2" id="subtitle" title="Docker学习笔记">
               
             </span>
 
@@ -180,8 +180,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-05-07 19:24" pubdate>
-        2021年5月7日 晚上
+      <time datetime="2021-08-03 10:27" pubdate>
+        2021年8月3日 上午
       </time>
     </span>
   
@@ -192,7 +192,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      515 字
+      232 字
     </span>
   
 
@@ -202,7 +202,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      4
        分钟
     </span>
   
@@ -244,35 +244,31 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Don&#39;t be evil</h1>
+            <h1 style="display: none">Docker学习笔记</h1>
             
             <div class="markdown-body">
-              <h1 id="不作恶"><a href="#不作恶" class="headerlink" title="不作恶"></a>不作恶</h1><p>​        对于商业公司来说，只要法律不禁止都是可以做的，绝大多数公司都是这样的企业文化，谷歌公司从2000年初创时就把<strong>不作恶</strong>（<strong>Don’t be evil</strong>）当作了公司文化，这也是谷歌公司在海内外圈粉的一个重要因素，也深深地影响了谷歌公司的员工，这句话甚至成为谷歌总部班车上Wi-Fi的密码。不过在2015年谷歌公司重组时，母公司Alphabet对这个座右铭做了调整，“不作恶”准则被“<strong>做正确的事</strong>”（<strong>do the right thing</strong>）取代。让我想起来三体里罗辑和史强的一段对话，对宇宙社会学进行了一番讨论，讲到了宇宙的公理和善恶。</p>
-<p>宇宙文明的两条<strong>公理</strong>：</p>
-<ul>
-<li><p>生存是文明的第一需求</p>
-</li>
-<li><p>文明不断增长和扩张，但宇宙中的物质总量保持不变</p>
-</li>
-</ul>
-<p>宇宙的两条<strong>准则</strong>：</p>
-<ul>
-<li>猜疑链（谁也不知道谁会先攻击谁）</li>
-<li>技术爆炸</li>
-</ul>
-<p> 文明之间的善意和恶意。善和恶在科学里是不严谨的，所以需要对它们的含义加以限制：善意就是指不主动攻击和消灭其他文明，恶意则相反。类比于科技公司的谷歌，是否也存在着相似的含义。</p>
-<p>前几天还看到一个up主用代码可视化黑暗森林法则，贴一下链接：</p>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV11h411m7Fp?p=1&share_medium=iphone&share_plat=ios&share_source=QQ&share_tag=s_i&timestamp=1620233847&unique_k=HoaMxA">黑暗森林可视化，真的只有一个选择吗？【波西】_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a></p>
-<p>书中对黑暗森林有这样一段描述：</p>
-<blockquote>
-<p>黑暗森林理论对人类文明的影响是极其深刻的：那个篝火余烬旁的孩子，由外向乐观变得孤僻自闭了。</p>
-</blockquote>
-<p>代码链接：</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/brackrat/darkforestsimulate">BrackRat/darkforestsimulate: 三体-黑暗森林模拟程序 (github.com)</a></p>
-<p>还有个谷歌砍掉的项目的网站（有兴趣可以去了解一下）：</p>
-<p><a target="_blank" rel="noopener" href="https://killedbygoogle.com/">Google Graveyard - Killed by Google</a></p>
-<p><img src="https://i.loli.net/2021/05/07/bwmc3ASZsfJQrM8.png" srcset="/img/loading.gif" lazyload alt="image-20210507194217756"></p>
-<p>hello <a href="https://seannnnnnnion.github.io/posts/3153.html">https://seannnnnnnion.github.io/posts/3153.html</a> bye</p>
+              <h1 id="docker学习笔记"><a href="#docker学习笔记" class="headerlink" title="docker学习笔记"></a>docker学习笔记</h1><h2 id="0x01-移除旧版本docker-如果有"><a href="#0x01-移除旧版本docker-如果有" class="headerlink" title="0x01 移除旧版本docker(如果有)"></a>0x01 移除旧版本docker(如果有)</h2><p> <code>[root@localhost sean]# yum remove docker docker-common docker-selinux docker-engine</code></p>
+<h2 id="0x02-安装依赖包"><a href="#0x02-安装依赖包" class="headerlink" title="0x02 安装依赖包"></a>0x02 安装依赖包</h2><p><code>[root@localhost sean]# yum install -y yum-utils device-mapper-persistent-data lvm2</code></p>
+<h2 id="0x03-换源"><a href="#0x03-换源" class="headerlink" title="0x03 换源"></a>0x03 换源</h2><figure class="highlight awk"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs awk">[root@localhost sean]<span class="hljs-comment"># yum-config-manager \</span><br>&gt;     --add-repo \<br>&gt;     https:<span class="hljs-regexp">//mi</span>rrors.aliyun.com<span class="hljs-regexp">/docker-ce/</span>linux<span class="hljs-regexp">/centos/</span>docker-ce.repo<br><br></code></pre></div></td></tr></table></figure>
+
+<h2 id="0x04-安装指定版本docker"><a href="#0x04-安装指定版本docker" class="headerlink" title="0x04 安装指定版本docker"></a>0x04 安装指定版本docker</h2><p><code>[root@localhost sean]# yum install docker-ce-19.03.13 docker-ce-cli-19.03.13 containerd.io -y</code></p>
+<h2 id="0x05-开启开机自启动，启动docker"><a href="#0x05-开启开机自启动，启动docker" class="headerlink" title="0x05 开启开机自启动，启动docker"></a>0x05 开启开机自启动，启动docker</h2><figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl daemon-reload</span><br>[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl restart docker</span><br></code></pre></div></td></tr></table></figure>
+
+<h2 id="0x06-查看docker信息"><a href="#0x06-查看docker信息" class="headerlink" title="0x06 查看docker信息"></a>0x06 查看docker信息</h2><p><code>[root@localhost sean]# docker info</code></p>
+<h2 id="0x07-添加镜像加速"><a href="#0x07-添加镜像加速" class="headerlink" title="0x07 添加镜像加速"></a>0x07 添加镜像加速</h2><p><code>[root@localhost sean]# vi /etc/docker/daemon.json</code></p>
+<figure class="highlight json"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;registry-mirrors&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;http://hub-mirror.c.163.com&quot;</span><span class="hljs-punctuation">,</span><span class="hljs-string">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span><span class="hljs-punctuation">]</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></div></td></tr></table></figure>
+
+<figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl daemon-reload</span><br>[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl restart docker</span><br>[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># docker version</span><br></code></pre></div></td></tr></table></figure>
+
+<p>启动服务</p>
+<p>查看版本信息</p>
+<p><img src="https://i.loli.net/2021/08/03/8jDseCiVx4fkAYL.png" srcset="/img/loading.gif" lazyload alt="image-20210803101526284"></p>
+<h2 id="0x08-docker-hellloworld"><a href="#0x08-docker-hellloworld" class="headerlink" title="0x08 docker hellloworld"></a>0x08 docker hellloworld</h2><h4 id="拉取hello-world镜像"><a href="#拉取hello-world镜像" class="headerlink" title="拉取hello-world镜像"></a>拉取hello-world镜像</h4><figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># docker pull hello-world</span><br></code></pre></div></td></tr></table></figure>
+
+<h4 id="运行hello-world"><a href="#运行hello-world" class="headerlink" title="运行hello-world"></a>运行hello-world</h4><figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># docker run hello-world</span><br></code></pre></div></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/08/03/VNmAH2hMsYdi97B.png" srcset="/img/loading.gif" lazyload alt="image-20210803101612932"></p>
+<p>hello <a href="https://seannnnnnnion.github.io/posts/10048.html">https://seannnnnnnion.github.io/posts/10048.html</a> bye</p>
 
             </div>
             <hr>
@@ -283,7 +279,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+                      <a class="hover-with-bg" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>
                     
                   </div>
                 
@@ -300,9 +296,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/49599.html">
+                      <a href="/posts/78b5d5bc.html">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">python3.7.10-dlib</span>
+                        <span class="hidden-mobile">今天老子终于辞职了</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -310,8 +306,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/40999.html">
-                        <span class="hidden-mobile">Powershell&&cmd</span>
+                      <a href="/posts/c87bec6a.html">
+                        <span class="hidden-mobile">2021暑假</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
