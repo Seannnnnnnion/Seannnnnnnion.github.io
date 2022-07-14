@@ -192,7 +192,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      223 字
+      226 字
     </span>
   
 
@@ -247,25 +247,25 @@
             <h1 style="display: none">Docker学习笔记</h1>
             
             <div class="markdown-body">
-              <h1 id="docker学习笔记"><a href="#docker学习笔记" class="headerlink" title="docker学习笔记"></a>docker学习笔记</h1><h2 id="0x01-移除旧版本docker-如果有"><a href="#0x01-移除旧版本docker-如果有" class="headerlink" title="0x01 移除旧版本docker(如果有)"></a>0x01 移除旧版本docker(如果有)</h2><p> <code>[root@localhost sean]# yum remove docker docker-common docker-selinux docker-engine</code></p>
+              <h1 id="docker-学习笔记"><a href="#docker-学习笔记" class="headerlink" title="docker 学习笔记"></a>docker 学习笔记</h1><h2 id="0x01-移除旧版本-docker-如果有"><a href="#0x01-移除旧版本-docker-如果有" class="headerlink" title="0x01 移除旧版本 docker(如果有)"></a>0x01 移除旧版本 docker(如果有)</h2><p><code>[root@localhost sean]# yum remove docker docker-common docker-selinux docker-engine</code></p>
 <h2 id="0x02-安装依赖包"><a href="#0x02-安装依赖包" class="headerlink" title="0x02 安装依赖包"></a>0x02 安装依赖包</h2><p><code>[root@localhost sean]# yum install -y yum-utils device-mapper-persistent-data lvm2</code></p>
 <h2 id="0x03-换源"><a href="#0x03-换源" class="headerlink" title="0x03 换源"></a>0x03 换源</h2><figure class="highlight awk"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs awk">[root@localhost sean]<span class="hljs-comment"># yum-config-manager \</span><br>&gt;     --add-repo \<br>&gt;     https:<span class="hljs-regexp">//mi</span>rrors.aliyun.com<span class="hljs-regexp">/docker-ce/</span>linux<span class="hljs-regexp">/centos/</span>docker-ce.repo<br><br></code></pre></div></td></tr></table></figure>
 
-<h2 id="0x04-安装指定版本docker"><a href="#0x04-安装指定版本docker" class="headerlink" title="0x04 安装指定版本docker"></a>0x04 安装指定版本docker</h2><p><code>[root@localhost sean]# yum install docker-ce-19.03.13 docker-ce-cli-19.03.13 containerd.io -y</code></p>
-<h2 id="0x05-开启开机自启动，启动docker"><a href="#0x05-开启开机自启动，启动docker" class="headerlink" title="0x05 开启开机自启动，启动docker"></a>0x05 开启开机自启动，启动docker</h2><figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl daemon-reload</span><br>[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl restart docker</span><br></code></pre></div></td></tr></table></figure>
+<h2 id="0x04-安装指定版本-docker"><a href="#0x04-安装指定版本-docker" class="headerlink" title="0x04 安装指定版本 docker"></a>0x04 安装指定版本 docker</h2><p><code>[root@localhost sean]# yum install docker-ce-19.03.13 docker-ce-cli-19.03.13 containerd.io -y</code></p>
+<h2 id="0x05-开启开机自启动，启动-docker"><a href="#0x05-开启开机自启动，启动-docker" class="headerlink" title="0x05 开启开机自启动，启动 docker"></a>0x05 开启开机自启动，启动 docker</h2><figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl daemon-reload</span><br>[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl restart docker</span><br></code></pre></div></td></tr></table></figure>
 
-<h2 id="0x06-查看docker信息"><a href="#0x06-查看docker信息" class="headerlink" title="0x06 查看docker信息"></a>0x06 查看docker信息</h2><p><code>[root@localhost sean]# docker info</code></p>
+<h2 id="0x06-查看-docker-信息"><a href="#0x06-查看-docker-信息" class="headerlink" title="0x06 查看 docker 信息"></a>0x06 查看 docker 信息</h2><p><code>[root@localhost sean]# docker info</code></p>
 <h2 id="0x07-添加镜像加速"><a href="#0x07-添加镜像加速" class="headerlink" title="0x07 添加镜像加速"></a>0x07 添加镜像加速</h2><p><code>[root@localhost sean]# vi /etc/docker/daemon.json</code></p>
-<figure class="highlight json"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;registry-mirrors&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;http://hub-mirror.c.163.com&quot;</span><span class="hljs-punctuation">,</span><span class="hljs-string">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span><span class="hljs-punctuation">]</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></div></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;registry-mirrors&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;http://hub-mirror.c.163.com&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span><span class="hljs-punctuation">]</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></div></td></tr></table></figure>
 
 <figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl daemon-reload</span><br>[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># systemctl restart docker</span><br>[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># docker version</span><br></code></pre></div></td></tr></table></figure>
 
 <p>启动服务</p>
 <p>查看版本信息</p>
 <p><img src="https://i.loli.net/2021/08/03/8jDseCiVx4fkAYL.png" srcset="/img/loading.gif" lazyload alt="image-20210803101526284"></p>
-<h2 id="0x08-docker-hellloworld"><a href="#0x08-docker-hellloworld" class="headerlink" title="0x08 docker hellloworld"></a>0x08 docker hellloworld</h2><h4 id="拉取hello-world镜像"><a href="#拉取hello-world镜像" class="headerlink" title="拉取hello-world镜像"></a>拉取hello-world镜像</h4><figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># docker pull hello-world</span><br></code></pre></div></td></tr></table></figure>
+<h2 id="0x08-docker-hellloworld"><a href="#0x08-docker-hellloworld" class="headerlink" title="0x08 docker hellloworld"></a>0x08 docker hellloworld</h2><h4 id="拉取-hello-world-镜像"><a href="#拉取-hello-world-镜像" class="headerlink" title="拉取 hello-world 镜像"></a>拉取 hello-world 镜像</h4><figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># docker pull hello-world</span><br></code></pre></div></td></tr></table></figure>
 
-<h4 id="运行hello-world"><a href="#运行hello-world" class="headerlink" title="运行hello-world"></a>运行hello-world</h4><figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># docker run hello-world</span><br></code></pre></div></td></tr></table></figure>
+<h4 id="运行-hello-world"><a href="#运行-hello-world" class="headerlink" title="运行 hello-world"></a>运行 hello-world</h4><figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">[root<span class="hljs-symbol">@localhost</span> sean]<span class="hljs-meta"># docker run hello-world</span><br></code></pre></div></td></tr></table></figure>
 
 <p><img src="https://i.loli.net/2021/08/03/VNmAH2hMsYdi97B.png" srcset="/img/loading.gif" lazyload alt="image-20210803101612932"></p>
 
@@ -277,7 +277,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/uncategorized/">uncategorized</a>
+                      <a class="hover-with-bg" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>
                     
                   </div>
                 

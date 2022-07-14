@@ -192,7 +192,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      485 字
+      486 字
     </span>
   
 
@@ -247,20 +247,38 @@
             <h1 style="display: none">LaTeX数学公式</h1>
             
             <div class="markdown-body">
-              <h1 id="LaTeX数学公式"><a href="#LaTeX数学公式" class="headerlink" title="LaTeX数学公式"></a>LaTeX数学公式</h1><h2 id="LATeX基本练习"><a href="#LATeX基本练习" class="headerlink" title="LATeX基本练习"></a>LATeX基本练习</h2><h3 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h3><p>公式一律使用另取一行，并且上下都空一行</p>
+              <h1 id="LaTeX-数学公式"><a href="#LaTeX-数学公式" class="headerlink" title="LaTeX 数学公式"></a>LaTeX 数学公式</h1><h2 id="LATeX-基本练习"><a href="#LATeX-基本练习" class="headerlink" title="LATeX 基本练习"></a>LATeX 基本练习</h2><h3 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h3><p>公式一律使用另取一行，并且上下都空一行</p>
 <p>行间插入 $x = a + b$<br>区间插入 $$x = a + b$$</p>
 <h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><p>可以看到 x 元素的上标通过 ^ 符号后接的内容体现，下表通过 _ 符号后接的内容体现，多于一位是要加 {} 包裹的。 笔者习惯先下标后上标的写法，和我的书写习惯一致：x_{balabala}^{bala}，不管你使用哪一种风格，最好自己注意统一，不要混用.</p>
 <p>$$<br>x_{1}^{2}<br>$$</p>
 <p>$$<br>x_{22}^{(n)}<br>$$</p>
-<h3 id="根式"><a href="#根式" class="headerlink" title="根式"></a>根式</h3><p>读到这里你已经了解了函数的概念，那么这历久很简单了，语法就是 \sqrt[]{} 。[] 中代表是几次根式，{} 代表根号下的表达式<br>$$<br>\sqrt[2]{3}<br>$$</p>
-<h3 id="求和积分"><a href="#求和积分" class="headerlink" title="求和积分"></a>求和积分</h3><p>这里很容易看出求和函数表达式 \sum_{起点}^{终点}表达式，积分函数表达式 \int_下限^上限dx<br>$$<br>\sum_{0}^{1}sinx<br>$$</p>
+<h3 id="根式"><a href="#根式" class="headerlink" title="根式"></a>根式</h3><p>读到这里你已经了解了函数的概念，那么这历久很简单了，语法就是 \sqrt[]{} 。[] 中代表是几次根式，{} 代表根号下的表达式</p>
+<p>$$<br>\sqrt[2]{3}<br>$$</p>
+<h3 id="求和积分"><a href="#求和积分" class="headerlink" title="求和积分"></a>求和积分</h3><p>这里很容易看出求和函数表达式 \sum*{起点}^{终点}表达式，积分函数表达式 \int*下限^上限 dx</p>
+<p>$$<br>\sum_{0}^{1}sinx<br>$$</p>
 <p>$$<br>\int_0^1sinxdx<br>$$</p>
-<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p>紧贴 a\!b<br>$$<br>a!b<br>$$<br>没有空格ab<br>$$<br>ab<br>$$<br>小空格 a,b<br>$$<br>a,b<br>$$<br>中等空格a\ b<br>$$<br>a\ b<br>$$<br>quad空格 a\quad b<br>$$<br>a\quad b<br>$$<br>两个quad空格 a\qquad b<br>$$<br>a\qquad b<br>$$<br>这个直接看上面的文字，介绍很清楚，<strong>主要指微调距离</strong>，使得公式更加漂亮。请比较下面的积分公式<br>$$<br>\int_a^bf(x)dx<br>$$</p>
+<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p>紧贴 a\!b</p>
+<p>$$<br>a!b<br>$$</p>
+<p>没有空格 ab</p>
+<p>$$<br>ab<br>$$</p>
+<p>小空格 a,b</p>
+<p>$$<br>a,b<br>$$</p>
+<p>中等空格 a\ b</p>
+<p>$$<br>a\ b<br>$$</p>
+<p>quad 空格 a\quad b</p>
+<p>$$<br>a\quad b<br>$$</p>
+<p>两个 quad 空格 a\qquad b</p>
+<p>$$<br>a\qquad b<br>$$</p>
+<p>这个直接看上面的文字，介绍很清楚，<strong>主要指微调距离</strong>，使得公式更加漂亮。请比较下面的积分公式</p>
+<p>$$<br>\int_a^bf(x)dx<br>$$</p>
 <p>$$<br>\ \int_a^bf(x)dx<br>$$</p>
-<h3 id="公式界定符"><a href="#公式界定符" class="headerlink" title="公式界定符"></a>公式界定符</h3><p>通过 \left 和 \right 后面跟界定符来对同时进行界定<br>$$<br>\left(\sum_{k=\frac{1}{2}}^{N^2}\frac{1}{k}\right)<br>$$</p>
+<h3 id="公式界定符"><a href="#公式界定符" class="headerlink" title="公式界定符"></a>公式界定符</h3><p>通过 \left 和 \right 后面跟界定符来对同时进行界定</p>
+<p>$$<br>\left(\sum_{k=\frac{1}{2}}^{N^2}\frac{1}{k}\right)<br>$$</p>
 <p>$$<br>\left|\sum_{k=\frac{1}{2}}^{N^2}\frac{1}{k}\right|<br>$$</p>
-<h3 id="多行"><a href="#多行" class="headerlink" title="多行"></a>多行</h3><p>\\\\用来换行，&amp;=用来对齐等号, \begin{align}``\end{align}用来写多行<br>$$<br>x,=,a+,b\\<br>y,=a_{1},+a_{2},+b<br>$$</p>
-<h3 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h3><p>通常使用 <code>\frac &#123;分子&#125; &#123;分母&#125;</code> 来生成一个分数，分数可多层嵌套。如果分式较为复杂，亦可使用 <code>分子 \over 分母</code> 此时分数仅有一层。<br>$$<br>\frac{a-1}{b-1} \quad or \quad {a+1 \over b+1}<br>$$</p>
+<h3 id="多行"><a href="#多行" class="headerlink" title="多行"></a>多行</h3><p>\\\\用来换行，&amp;=用来对齐等号, \begin{align}``\end{align}用来写多行</p>
+<p>$$<br>x,=,a+,b\\<br>y,=a_{1},+a_{2},+b<br>$$</p>
+<h3 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h3><p>通常使用 <code>\frac &#123;分子&#125; &#123;分母&#125;</code> 来生成一个分数，分数可多层嵌套。如果分式较为复杂，亦可使用 <code>分子 \over 分母</code> 此时分数仅有一层。</p>
+<p>$$<br>\frac{a-1}{b-1} \quad or \quad {a+1 \over b+1}<br>$$</p>
 
             </div>
             <hr>
@@ -270,7 +288,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/uncategorized/">uncategorized</a>
+                      <a class="hover-with-bg" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>
                     
                   </div>
                 
